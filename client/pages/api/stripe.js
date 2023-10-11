@@ -32,22 +32,22 @@ export default async function handler(req, res) {
               fixed_amount: { amount: 0, currency: "usd" },
               display_name: "Free shipping",
               delivery_estimate: {
-                minimum: { unit: "business_day", value: 5 },
-                maximum: { unit: "business_day", value: 7 },
+                minimum: { unit: "hour", value: 1 },
+                maximum: { unit: "hour", value: 2 },
               },
             },
           },
-          {
-            shipping_rate_data: {
-              type: "fixed_amount",
-              fixed_amount: { amount: 10 * 100, currency: "usd" },
-              display_name: "Fast shipping",
-              delivery_estimate: {
-                minimum: { unit: "business_day", value: 2 },
-                maximum: { unit: "business_day", value: 3 },
-              },
-            },
-          },
+          // {
+          //   shipping_rate_data: {
+          //     type: "fixed_amount",
+          //     fixed_amount: { amount: 10 * 100, currency: "usd" },
+          //     display_name: "Fast shipping",
+          //     delivery_estimate: {
+          //       minimum: { unit: "business_day", value: 2 },
+          //       maximum: { unit: "business_day", value: 3 },
+          //     },
+          //   },
+          // },
         ],
         line_items: cart.map((item) => {
           const img = item.banner;
