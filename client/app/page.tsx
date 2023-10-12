@@ -43,7 +43,7 @@ const HomePage = async () => {
               <h3 className="text-xl font-semibold">Khuyễn Mãi 40%</h3>
               <p>Với các món Pizza</p>
               <Link
-                href={`/productlist/ao-nam`}
+                href={`/productlist/pizza`}
                 className="flex items-center space-x-2"
               >
                 <span>Click vào để xem chi tiết</span>
